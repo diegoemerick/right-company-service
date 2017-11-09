@@ -16,7 +16,7 @@ class CompanyRepository implements CompanyRepositoryInterface
     {
         $find = $this->get($id);
         $find->name = $lawyer['name'];
-        $find->phone = $lawyer['activity'];
+        $find->activity = $lawyer['activity'];
         $find->save();
 
         return $find;
